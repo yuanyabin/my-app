@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+// import { EchartsNg2Module } from 'echarts-ng2';
 
 import { PageModule } from './core/pages/page.module';
 import { AppComponent } from './app.component';
@@ -17,6 +18,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     RouterModule,
+    // EchartsNg2Module,
+    // NgxEchartsModule,
     BrowserModule,
     SharedModule,
     StoreModule.forRoot(reducer),
