@@ -1,0 +1,8 @@
+nz-layout {
+    height: 100%;
+}
+
+nz-avatar {
+    float: right;
+    margin: 12px 20px;
+}
