@@ -24,7 +24,9 @@
     <nz-layout>
       <nz-header style="background: rgb(215, 216, 223); padding:0;">
         <i class="anticon trigger" [class.anticon-menu-fold]="!isCollapsed" [class.anticon-menu-unfold]="isCollapsed" (click)="isCollapsed=!isCollapsed"></i>
-        <nz-avatar [nzShape]="'square'" [nzSize]="'large'" [nzIcon]="'user'"></nz-avatar>
+        <nz-tooltip [nzTitle]="'当前登录'" [nzPlacement]="'topLeft'">
+          <a nz-tooltip>登出</a>
+        </nz-tooltip>
       </nz-header>
       <nz-content style="margin:0 16px;">
         <router-outlet></router-outlet>

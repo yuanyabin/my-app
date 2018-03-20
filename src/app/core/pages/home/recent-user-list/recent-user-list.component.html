@@ -1,0 +1,20 @@
+<nz-table #nzTable [nzDataSource]="UserLists" [nzIsPagination]="false">
+  <tbody nz-tbody>
+    <tr nz-tbody-tr *ngFor="let userItem of UserLists">
+      <td nz-td>{{userItem.name}}</td>
+      <td nz-td>{{userItem.Email}}</td>
+      <td nz-td>{{userItem.address? userItem.address : ''}}</td>
+      <td nz-td>{{userItem.explain? userItem.address : ''}}</td>
+      <td nz-td>
+        <button nz-button [nzType]="'primary'" (click)="deleteUser(userItem.id, userItem.name)">
+          <span>删除</span>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</nz-table>
+<nz-modal [nzVisible]="isVisible" [nzMaskClosable]="false" [nzTitle]="'删除操作'" [nzContent]="modalContent" (nzOnCancel)="handleCancel($event)" (nzOnOk)="handleOk($event)">
+  <ng-template #modalContent>
+    <p>是否要删除用户：{{dialogText}}</p>
+  </ng-template>
+</nz-modal>

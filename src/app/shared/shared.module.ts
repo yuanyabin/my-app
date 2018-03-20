@@ -3,12 +3,14 @@ import { NgZorroAntdModule } from 'ng-zorro-antd';
 
 import { LoginComponent } from './components/login/login.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { DialogComponent } from './components/dialog/dialog.component';
 
 
 @NgModule({
   declarations: [
     LoginComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    DialogComponent
   ],
   imports: [
     NgZorroAntdModule.forRoot(),

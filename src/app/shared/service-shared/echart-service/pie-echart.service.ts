@@ -7,7 +7,6 @@ export class PipEchartService {
 
   option = {
     animation: true,
-    title: {text: '', x: 'center', y: 'bottom'},
     color: [],
     tooltip: {
       trigger: 'item',
@@ -33,7 +32,7 @@ export class PipEchartService {
           emphasis: {
             show: true,
             textStyle: {
-              fontSize: '16',
+              fontSize: '12',
               fontWeight: 'normal'
             }
           }
@@ -52,7 +51,6 @@ export class PipEchartService {
   makeChart(options) {
     this.option.series[0].data = options.data;
     this.option.color = options.color;
-    this.option.title.text = options.title.text;
     return this.option;
   }
 }

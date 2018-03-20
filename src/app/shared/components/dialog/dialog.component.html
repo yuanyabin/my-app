@@ -1,0 +1,8 @@
+<button nz-button [nzType]="'primary'" (click)="showModal()">
+  <span>显示对话框</span>
+</button>
+<nz-modal [nzVisible]="isVisible" [nzTitle]="title" [nzContent]="modalContent" (nzOnCancel)="handleCancel($event)" (nzOnOk)="handleOk($event)">
+  <ng-template #modalContent>
+    <p>{{text}}</p>
+  </ng-template>
+</nz-modal>

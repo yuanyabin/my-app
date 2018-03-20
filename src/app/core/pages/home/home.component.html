@@ -1,16 +1,49 @@
-<div class='wrapper'>
-  <div nz-row class='wrapper' [nzType]="'flex'" [nzJustify]="'space-around'">
-    <div nz-col [nzSpan]="4">
-      <div echarts [options]="option" class="pie-chart"></div>
+<h3>
+  仪表盘</h3>
+<div class="row pip_wrapper">
+  <div class="normal_bottom col-xlg-3 col-lg-3 col-md-6 col-sm-12 col-12">
+    <div class="chart-container">
+      <div echarts [options]="option_chart_pip" class="pie-chart"></div>
+      <div class="ChartTitle">new Visits</div>
     </div>
-    <div nz-col [nzSpan]="4">
-      col-4
+  </div>
+  <div class="normal_bottom col-xlg-3 col-lg-3 col-md-6 col-sm-12 col-12">
+    <div class="chart-container">
+      <div echarts [options]="option_chart_pip" class="pie-chart"></div>
+      <div class="ChartTitle">Purchases</div>
     </div>
-    <div nz-col [nzSpan]="4">
-      col-4
+  </div>
+  <div class="normal_bottom col-xlg-3 col-lg-3 col-md-6 col-sm-12 col-12">
+    <div class="chart-container">
+      <div echarts [options]="option_chart_pip" class="pie-chart"></div>
+      <div class="ChartTitle">Active Users</div>
     </div>
-    <div nz-col [nzSpan]="4">
-      col-4
+  </div>
+  <div class="normal_bottom col-xlg-3 col-lg-3 col-md-6 col-sm-12 col-12">
+    <div class="chart-container">
+      <div echarts [options]="option_chart_pip" class="pie-chart"></div>
+      <div class="ChartTitle">Returned</div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xlg-9 col-lg-6 col-md-6 col-sm-12 col-xs-12 normal_bottom">
+    <div class="chart-container">
+      <app-line-chart></app-line-chart>
+    </div>
+  </div>
+  <div class="col-xlg-9 col-lg-6 col-md-6 col-sm-12 col-xs-12 normal_bottom">
+    <div class="chart-container normal-height">
+      <app-recent-user-list></app-recent-user-list>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xlg-9 col-lg-12 col-md-12 col-sm-12 col-xs-12 normal_bottom">
+    <div class="chart-container min-normal">
+      <app-remind-list></app-remind-list>
     </div>
   </div>
 </div>

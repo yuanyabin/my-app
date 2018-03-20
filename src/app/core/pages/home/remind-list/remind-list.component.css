@@ -1,0 +1,8 @@
+h3, .addControl {
+    border-bottom: 1px solid #fff;
+}
+
+td {
+    width: 25%;
+    overflow: hidden;
+}

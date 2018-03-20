@@ -24,4 +24,9 @@ export class API {
             return this.tenant;
         }
     }
+
+    getUserList(): string {
+        const _type: string = this.getPrivilege();
+        return `${this.prefix}/${_type}/users/List`;
+    }
 }

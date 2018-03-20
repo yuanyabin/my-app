@@ -2,7 +2,11 @@ nz-layout {
     height: 100%;
 }
 
-nz-avatar {
+nz-tooltip {
     float: right;
     margin: 12px 20px;
+}
+
+nz-layout {
+    background-color: rgba(56, 122, 180, 0.144)
 }
